@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Circle Animation</title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+    }
+    
+    .circle {
+        width: 200px;
+        height: 200px;
+        background-color: #007bff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        animation: rotate 5s linear infinite;
+    }
+    
+    .name {
+        position: absolute;
+        color: white;
+        font-size: 20px;
+        transform: translate(-50%, -50%);
+    }
+    
+    .name:nth-child(1) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .name:nth-child(2) {
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .name:nth-child(3) {
+        bottom: 5%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+    
+    @keyframes rotate {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+</head>
+<body>
+<div class="circle">
+    <div class="name">Sweta</div>
+    <div class="name">Sakshi</div>
+    <div class="name">Tanya</div>
+</div>
+</body>
+</html>

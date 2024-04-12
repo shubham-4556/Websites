@@ -3,7 +3,7 @@
 
 int main(void)
 {
-        double h = get_double("Please prove hours");
+        double h = get_double("Please provide hours");
         double m = get_double("Please provide minutes");
 
         double hour = h + (m/60);

@@ -3,7 +3,7 @@ public class angle
     public static void main(String[] args)
     {
         int h = Integer.parseInt(args[0]);
-        int m = Integer.parseInt(args[0]);
+        int m = Integer.parseInt(args[1]);
 
         double hour = h + (m/60);
 
